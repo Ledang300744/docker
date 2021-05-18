@@ -13,7 +13,7 @@ services:
     volumes:
       - ./judge0.conf:/judge0.conf:ro
     ports:
-      - "2358:2358"
+      - "80:3000"
     privileged: true
     <<: *default-logging
     restart: always
